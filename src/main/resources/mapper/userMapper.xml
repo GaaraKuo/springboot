@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.gaara.ybbweb.mapper.UserMapper">
+
+    <resultMap id="BaseResultMap" type="com.gaara.ybbweb.model.User">
+        <id column="u_id" property="id" jdbcType="VARCHAR"></id>
+        <result column="u_name" property="name" jdbcType="VARCHAR"></result>
+        <result column="u_password" property="password" jdbcType="VARCHAR"></result>
+        <result column="u_desc" property="description" jdbcType="VARCHAR"></result>
+    </resultMap>
+    <!--&lt;!&ndash; 通用查询结果列 &ndash;&gt;-->
+    <!--<sql id="Base_Column_List">-->
+        <!--u_id AS id, u_name AS name, u_password AS password, u_desc AS description-->
+    <!--</sql>-->
+    <select id="getAllUsers" resultMap="BaseResultMap">
+        select * from user
+    </select>
+</mapper>
