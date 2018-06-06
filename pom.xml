@@ -7,7 +7,7 @@
     <groupId>com.gaara</groupId>
     <artifactId>ybbweb</artifactId>
     <version>0.0.1</version>
-    <packaging>jar</packaging>
+    <packaging>war</packaging>
 
     <name>ybbweb</name>
     <description>Demo project for Spring Boot</description>
@@ -98,7 +98,7 @@
             <groupId>com.baomidou</groupId>
             <artifactId>mybatis-plus</artifactId>
             <version>2.1.9</version>
-            <type>jar.sha256</type>
+            <type>jar.sha1</type>
         </dependency>
         <dependency>
             <groupId>com.baomidou</groupId>
@@ -132,6 +132,13 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>2.0.2.RELEASE</version>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <configuration>
+                    <skip>true</skip>
+                </configuration>
             </plugin>
         </plugins>
     </build>
