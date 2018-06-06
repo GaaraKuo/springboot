@@ -6,7 +6,7 @@
 
     <groupId>com.gaara</groupId>
     <artifactId>ybbweb</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.1</version>
     <packaging>jar</packaging>
 
     <name>ybbweb</name>
@@ -110,6 +110,7 @@
         <dependency>
             <groupId>javax.mail</groupId>
             <artifactId>mail</artifactId>
+            <version>1.4.7</version>
         </dependency>
 
         <!--引入spring aop-->
@@ -130,6 +131,7 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>2.0.2.RELEASE</version>
             </plugin>
         </plugins>
     </build>
